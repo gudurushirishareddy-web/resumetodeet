@@ -1,0 +1,111 @@
+{
+  "name": "resume-to-deet-registration-system",
+  "version": "1.0.0",
+  "description": "AI-powered Resume-to-DEET Instant Registration System — NLP + Flask + Vanilla JS",
+  "main": "backend/app.py",
+  "author": "Your Name <your@email.com>",
+  "license": "MIT",
+  "private": true,
+
+  "keywords": [
+    "resume-parser",
+    "nlp",
+    "spacy",
+    "flask",
+    "deet",
+    "registration",
+    "ocr",
+    "pdfplumber",
+    "hackathon"
+  ],
+
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0",
+    "python": ">=3.9.0"
+  },
+
+  "scripts": {
+    "start":          "npm run flask:start",
+    "dev":            "concurrently \"npm run flask:dev\" \"npm run lint:watch\"",
+
+    "flask:start":    "cd backend && python app.py",
+    "flask:dev":      "cd backend && FLASK_ENV=development FLASK_DEBUG=1 python app.py",
+    "flask:prod":     "cd backend && gunicorn -w 4 -b 0.0.0.0:5000 \"app:create_app()\"",
+
+    "setup":          "npm run setup:python && npm run setup:spacy",
+    "setup:python":   "pip install -r requirements.txt",
+    "setup:spacy":    "python -m spacy download en_core_web_sm",
+    "setup:node":     "npm install",
+
+    "evaluate":       "cd backend && python -m nlp.evaluator",
+    "test":           "npm run evaluate",
+
+    "lint":           "eslint frontend/static/js/**/*.js",
+    "lint:fix":       "eslint frontend/static/js/**/*.js --fix",
+    "lint:watch":     "esw frontend/static/js/**/*.js --watch --color",
+
+    "format":         "prettier --write \"frontend/static/**/*.{js,css,html}\"",
+    "format:check":   "prettier --check \"frontend/static/**/*.{js,css,html}\"",
+
+    "clean":          "rm -rf node_modules data/uploads/* logs/*.log data/deet.db",
+    "clean:uploads":  "rm -rf data/uploads/* && mkdir -p data/uploads",
+    "clean:db":       "rm -f data/deet.db",
+
+    "init:dirs":      "mkdir -p data/uploads logs",
+    "postinstall":    "npm run init:dirs"
+  },
+
+  "devDependencies": {
+    "concurrently":           "^8.2.2",
+    "eslint":                 "^8.57.0",
+    "eslint-plugin-html":     "^8.1.1",
+    "eslint-watch":           "^8.0.0",
+    "prettier":               "^3.2.5"
+  },
+
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021":  true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType":  "module"
+    },
+    "globals": {
+      "API": "readonly"
+    },
+    "rules": {
+      "no-unused-vars":    "warn",
+      "no-console":        "off",
+      "semi":              ["warn", "always"],
+      "quotes":            ["warn", "single"],
+      "no-undef":          "warn",
+      "eqeqeq":            "warn",
+      "no-trailing-spaces":"warn"
+    },
+    "ignorePatterns": ["node_modules/", "data/", "logs/"]
+  },
+
+  "prettier": {
+    "singleQuote":    true,
+    "semi":           true,
+    "tabWidth":       2,
+    "printWidth":     100,
+    "trailingComma":  "es5",
+    "bracketSpacing": true
+  },
+
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/your-username/resume-to-deet"
+  },
+
+  "bugs": {
+    "url": "https://github.com/your-username/resume-to-deet/issues"
+  },
+
+  "homepage": "http://localhost:5000"
+}
