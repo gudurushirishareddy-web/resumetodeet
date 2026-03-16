@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DEET Registration — DEET Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/static/css/main.css" />
+<link rel="stylesheet" href="/static/css/form.css" />
+</head>
+<body class="app-page">
+
+<div class="app-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-icon">◈</span>
+      <span class="logo-text">DEET<span class="logo-accent">Portal</span></span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="/dashboard" class="nav-item">
+        <span class="ni-icon">⊞</span><span>Dashboard</span>
+      </a>
+      <a href="/dashboard" class="nav-item">
+        <span class="ni-icon">↑</span><span>Upload Resume</span>
+      </a>
+      <a href="/register-form" class="nav-item active">
+        <span class="ni-icon">✎</span><span>DEET Form</span>
+      </a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="user-chip">
+        <div class="user-avatar" id="userAvatar">?</div>
+        <div class="user-info">
+          <span class="user-name" id="sidebarName">—</span>
+          <span class="user-role">Job Seeker</span>
+        </div>
+      </div>
+      <button class="btn-logout" onclick="logout()">Sign Out</button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="app-header">
+      <div class="header-left">
+        <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+        <div>
+          <h1 class="page-title">DEET Registration Form</h1>
+          <p class="page-sub">Review, edit, and submit your details</p>
+        </div>
+      </div>
+      <div class="header-right" id="formActions">
+        <button class="btn-ghost" onclick="saveDraft()">Save Draft</button>
+        <button class="btn-primary" onclick="submitForm()">Submit Registration</button>
+      </div>
+    </header>
+
+    <!-- Info Banner -->
+    <div class="info-banner" id="infoBanner">
+      <span class="ib-icon">💡</span>
+      <span id="infoBannerMsg">Load from a resume or fill manually below.</span>
+      <button class="ib-close" onclick="this.parentElement.style.display='none'">✕</button>
+    </div>
+
+    <!-- Quality Score Bar -->
+    <div class="quality-card" id="qualityCard" style="display:none">
+      <div class="qc-label">Resume Quality Score</div>
+      <div class="quality-bar-wrap">
+        <div class="quality-bar" id="qualityBar" style="width:0%"></div>
+      </div>
+      <div class="qc-score" id="qualityScore">0/100</div>
+      <div class="qc-tip" id="qualityTip"></div>
+    </div>
+
+    <!-- Form Sections -->
+    <form id="deetForm" class="deet-form" onsubmit="return false;">
+
+      <!-- Personal Info -->
+      <div class="form-section">
+        <div class="fs-header">
+          <div class="fs-num">01</div>
+          <div class="fs-title-wrap">
+            <h2>Personal Information</h2>
+            <span class="fs-sub">Basic contact details</span>
+          </div>
+          <div class="confidence-badge" id="conf-personal"></div>
+        </div>
+        <div class="form-grid">
+          <div class="field-group span-2">
+            <label>Full Name <span class="req">*</span></label>
+            <input type="text" id="f_name" name="full_name" placeholder="Your full name" required />
+            <span class="conf-indicator" id="ci_name"></span>
+          </div>
+          <div class="field-group">
+            <label>Email Address <span class="req">*</span></label>
+            <input type="email" id="f_email" name="email" placeholder="email@example.com" required />
+            <span class="conf-indicator" id="ci_email"></span>
+          </div>
+          <div class="field-group">
+            <label>Phone Number <span class="req">*</span></label>
+            <input type="tel" id="f_phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+            <span class="conf-indicator" id="ci_phone"></span>
+          </div>
+          <div class="field-group">
+            <label>City / Address</label>
+            <input type="text" id="f_address" name="address" placeholder="City, State" />
+          </div>
+          <div class="field-group">
+            <label>LinkedIn Profile</label>
+            <input type="url" id="f_linkedin" name="linkedin" placeholder="linkedin.com/in/yourname" />
+          </div>
+          <div class="field-group">
+            <label>GitHub Profile</label>
+            <input type="url" id="f_github" name="github" placeholder="github.com/yourname" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Career Objective -->
+      <div class="form-section">
+        <div class="fs-header">
+          <div class="fs-num">02</div>
+          <div class="fs-title-wrap">
+            <h2>Career Objective</h2>
+            <span class="fs-sub">Your professional summary</span>
+          </div>
+        </div>
+        <div class="form-grid">
+          <div class="field-group span-full">
+            <label>Career Objective / Summary</label>
+            <textarea id="f_objective" name="career_objective" rows="4"
+                      placeholder="Write 2-3 lines describing your career goals..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="form-section">
+        <div class="fs-header">
+          <div class="fs-num">03</div>
+          <div class="fs-title-wrap">
+            <h2>Education</h2>
+            <span class="fs-sub">Academic qualifications</span>
+          </div>
+          <button type="button" class="add-entry-btn" onclick="addEducationEntry()">+ Add</button>
+        </div>
+        <div id="educationEntries">
+          <!-- Entries injected by JS -->
+        </div>
+        <div class="empty-entries" id="eduEmpty">No education entries yet. <button type="button" class="link-btn" onclick="addEducationEntry()">Add one</button></div>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="form-section">
+        <div class="fs-header">
+          <div class="fs-num">04</div>
+          <div class="fs-title-wrap">
+            <h2>Technical Skills</h2>
+            <span class="fs-sub">Your technology stack</span>
+          </div>
+        </div>
+        <div class="form-grid">
+          <div class="field-group span-full">
+            <label>Programming Languages</label>
+            <div class="tag-input-wrap">
+              <div class="tags-container" id="tags_prog"></div>
+              <input type="text" id="ti_prog" placeholder="Type and press Enter" onkeydown="addTag(event,'prog')" />
+            </div>
+          </div>
+          <div class="field-group span-full">
+            <label>Web Technologies / Frameworks</label>
+            <div class="tag-input-wrap">
+              <div class="tags-container" id="tags_web"></div>
+              <input type="text" id="ti_web" placeholder="Type and press Enter" onkeydown="addTag(event,'web')" />
+            </div>
+          </div>
+          <div class="field-group span-full">
+            <label>Tools &amp; Platforms</label>
+            <div class="tag-input-wrap">
+              <div class="tags-container" id="tags_tools"></div>
+              <input type="text" id="ti_tools" placeholder="Type and press Enter" onkeydown="addTag(event,'tools')" />
+            </div>
+          </div>
+          <div class="field-group span-full">
+            <label>Core Concepts</label>
+            <div class="tag-input-wrap">
+              <div class="tags-container" id="tags_concepts"></div>
+              <input type="text" id="ti_concepts" placeholder="Type and press Enter" onkeydown="addTag(event,'concepts')" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="form-section">
+        <div class="fs-header">
+          <div class="fs-num">05</div>
+          <div class="fs-title-wrap">
+            <h2>Academic Projects</h2>
+            <span class="fs-sub">Key projects and achievements</span>
+          </div>
+          <button type="button" class="add-entry-btn" onclick="addProjectEntry()">+ Add</button>
+        </div>
+        <div id="projectEntries"></div>
+        <div class="empty-entries" id="projEmpty">No projects yet. <button type="button" class="link-btn" onclick="addProjectEntry()">Add one</button></div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="form-section">
+        <div class="fs-header">
+          <div class="fs-num">06</div>
+          <div class="fs-title-wrap">
+            <h2>Certifications</h2>
+            <span class="fs-sub">Courses and certificates</span>
+          </div>
+          <button type="button" class="add-entry-btn" onclick="addCertEntry()">+ Add</button>
+        </div>
+        <div id="certEntries"></div>
+        <div class="empty-entries" id="certEmpty">No certifications yet.</div>
+      </div>
+
+      <!-- Additional Info -->
+      <div class="form-section">
+        <div class="fs-header">
+          <div class="fs-num">07</div>
+          <div class="fs-title-wrap">
+            <h2>Additional Information</h2>
+            <span class="fs-sub">Languages, hobbies, participations</span>
+          </div>
+        </div>
+        <div class="form-grid">
+          <div class="field-group">
+            <label>Languages Known</label>
+            <div class="tag-input-wrap">
+              <div class="tags-container" id="tags_langs"></div>
+              <input type="text" id="ti_langs" placeholder="e.g. English, Telugu" onkeydown="addTag(event,'langs')" />
+            </div>
+          </div>
+          <div class="field-group">
+            <label>Hobbies &amp; Interests</label>
+            <div class="tag-input-wrap">
+              <div class="tags-container" id="tags_hobbies"></div>
+              <input type="text" id="ti_hobbies" placeholder="e.g. Reading, Coding" onkeydown="addTag(event,'hobbies')" />
+            </div>
+          </div>
+          <div class="field-group span-full">
+            <label>Participations / Hackathons</label>
+            <textarea id="f_participations" name="participations" rows="3"
+                      placeholder="Event Name – Organization / College"></textarea>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+    <!-- Skill Gap Analysis -->
+    <div class="analysis-card" id="analysisCard" style="display:none">
+      <div class="ac-header">
+        <h3>🎯 Job Match Analysis</h3>
+        <button class="btn-ghost-sm" onclick="runGapAnalysis()">Refresh</button>
+      </div>
+      <div id="analysisResults"></div>
+    </div>
+
+  </main>
+</div>
+
+<!-- Success Modal -->
+<div class="modal-overlay hidden" id="successModal">
+  <div class="modal-box success-box">
+    <div class="success-icon">✅</div>
+    <h2>Registration Submitted!</h2>
+    <p>Your DEET registration has been successfully submitted.</p>
+    <div class="confirmation-num" id="confirmationNum">DEET-000000</div>
+    <button class="btn-primary" onclick="window.location='/dashboard'">Back to Dashboard</button>
+  </div>
+</div>
+
+<script src="/static/js/form.js"></script>
+</body>
+</html>

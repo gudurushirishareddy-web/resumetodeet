@@ -1,0 +1,198 @@
+2026-03-15 13:19:30,367 [INFO] models.database: Database initialized successfully
+2026-03-15 13:19:30,405 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 13:19:30,440 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.167:5000
+2026-03-15 13:19:30,442 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-03-15 13:19:30,445 [INFO] werkzeug:  * Restarting with stat
+2026-03-15 13:19:30,761 [INFO] models.database: Database initialized successfully
+2026-03-15 13:19:30,768 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 13:19:30,779 [WARNING] werkzeug:  * Debugger is active!
+2026-03-15 13:19:30,781 [INFO] werkzeug:  * Debugger PIN: 863-184-168
+2026-03-15 13:20:48,443 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 13:20:48] "GET / HTTP/1.1" 200 -
+2026-03-15 13:20:48,873 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 13:20:48] "GET /static/js/auth.js HTTP/1.1" 200 -
+2026-03-15 13:20:48,881 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 13:20:48] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-03-15 13:20:49,169 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 13:20:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-15 13:26:24,703 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 13:26:24] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2026-03-15 16:22:08,055 [INFO] models.database: Database initialized successfully
+2026-03-15 16:22:08,071 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 16:22:08,117 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.167:5000
+2026-03-15 16:22:08,120 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-03-15 16:22:08,126 [INFO] werkzeug:  * Restarting with stat
+2026-03-15 16:22:08,396 [INFO] models.database: Database initialized successfully
+2026-03-15 16:22:08,418 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 16:22:08,426 [WARNING] werkzeug:  * Debugger is active!
+2026-03-15 16:22:08,430 [INFO] werkzeug:  * Debugger PIN: 863-184-168
+2026-03-15 16:22:39,276 [INFO] models.database: Database initialized successfully
+2026-03-15 16:22:39,276 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 16:22:39,314 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.167:5000
+2026-03-15 16:22:39,314 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-03-15 16:22:39,319 [INFO] werkzeug:  * Restarting with stat
+2026-03-15 16:22:39,597 [INFO] models.database: Database initialized successfully
+2026-03-15 16:22:39,612 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 16:22:39,628 [WARNING] werkzeug:  * Debugger is active!
+2026-03-15 16:22:39,636 [INFO] werkzeug:  * Debugger PIN: 863-184-168
+2026-03-15 16:30:50,146 [INFO] models.database: Database initialized successfully
+2026-03-15 16:30:50,154 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 16:30:50,178 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.167:5000
+2026-03-15 16:30:50,178 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-03-15 16:30:50,180 [INFO] werkzeug:  * Restarting with stat
+2026-03-15 16:30:50,481 [INFO] models.database: Database initialized successfully
+2026-03-15 16:30:50,484 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 16:30:50,499 [WARNING] werkzeug:  * Debugger is active!
+2026-03-15 16:30:50,508 [INFO] werkzeug:  * Debugger PIN: 863-184-168
+2026-03-15 16:31:54,871 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:31:54] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2026-03-15 16:32:23,270 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:32:23] "[31m[1mPOST /api/auth/signup HTTP/1.1[0m" 400 -
+2026-03-15 16:32:44,855 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:32:44] "[31m[1mPOST /api/auth/signup HTTP/1.1[0m" 400 -
+2026-03-15 16:32:50,115 [INFO] routes.auth: New user registered: gudurushirishareddy@gmail.com
+2026-03-15 16:32:50,115 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:32:50] "[35m[1mPOST /api/auth/signup HTTP/1.1[0m" 201 -
+2026-03-15 16:32:50,202 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:32:50] "GET /dashboard HTTP/1.1" 200 -
+2026-03-15 16:32:50,283 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:32:50] "GET /static/css/dashboard.css HTTP/1.1" 200 -
+2026-03-15 16:32:50,287 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:32:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 16:32:50,288 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:32:50] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+2026-03-15 16:32:50,323 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:32:50] "GET /api/resume/list HTTP/1.1" 200 -
+2026-03-15 16:32:50,330 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:32:50] "GET /api/deet/list HTTP/1.1" 200 -
+2026-03-15 16:33:12,933 [INFO] routes.resume: File saved: 60affc5ad629446594e9e1b6d47af4c9_shirisha_resume.pdf for user 1
+2026-03-15 16:33:13,987 [INFO] nlp.parser: PDF parsed with pdfplumber: 1917 chars
+2026-03-15 16:33:18,567 [INFO] routes.resume: Resume extracted: ID=1, quality=79
+2026-03-15 16:33:18,567 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:18] "POST /api/resume/upload HTTP/1.1" 200 -
+2026-03-15 16:33:19,837 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:19] "GET /register-form HTTP/1.1" 200 -
+2026-03-15 16:33:19,894 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:19] "GET /static/css/form.css HTTP/1.1" 200 -
+2026-03-15 16:33:19,894 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 16:33:19,897 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:19] "GET /static/js/form.js HTTP/1.1" 200 -
+2026-03-15 16:33:19,923 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:19] "POST /api/resume/gap-analysis HTTP/1.1" 200 -
+2026-03-15 16:33:57,592 [INFO] routes.deet: DEET registration submitted: ID=1 user=1
+2026-03-15 16:33:57,608 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:57] "POST /api/deet/submit HTTP/1.1" 200 -
+2026-03-15 16:33:59,675 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:59] "GET /dashboard HTTP/1.1" 200 -
+2026-03-15 16:33:59,729 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 16:33:59,733 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:59] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+2026-03-15 16:33:59,735 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:59] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+2026-03-15 16:33:59,778 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:59] "GET /api/resume/list HTTP/1.1" 200 -
+2026-03-15 16:33:59,786 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:33:59] "GET /api/deet/list HTTP/1.1" 200 -
+2026-03-15 16:34:25,153 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:25] "GET / HTTP/1.1" 200 -
+2026-03-15 16:34:25,192 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:25] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 16:34:25,201 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:25] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-03-15 16:34:30,401 [INFO] routes.auth: User logged in: gudurushirishareddy@gmail.com
+2026-03-15 16:34:30,403 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:30] "POST /api/auth/login HTTP/1.1" 200 -
+2026-03-15 16:34:30,477 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:30] "GET /dashboard HTTP/1.1" 200 -
+2026-03-15 16:34:30,541 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 16:34:30,556 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:30] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+2026-03-15 16:34:30,561 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:30] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+2026-03-15 16:34:30,609 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:30] "GET /api/resume/list HTTP/1.1" 200 -
+2026-03-15 16:34:30,631 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:30] "GET /api/deet/list HTTP/1.1" 200 -
+2026-03-15 16:34:45,472 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:45] "GET / HTTP/1.1" 200 -
+2026-03-15 16:34:45,510 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 16:34:45,516 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 16:34:45] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-03-15 17:00:27,453 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 17:00:27] "GET / HTTP/1.1" 200 -
+2026-03-15 17:00:27,491 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 17:00:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 17:00:27,491 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 17:00:27] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-03-15 17:11:42,159 [INFO] models.database: Database initialized successfully
+2026-03-15 17:11:42,159 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 17:11:42,208 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.167:5000
+2026-03-15 17:11:42,208 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-03-15 17:11:42,211 [INFO] werkzeug:  * Restarting with stat
+2026-03-15 17:11:42,501 [INFO] models.database: Database initialized successfully
+2026-03-15 17:11:42,501 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 17:11:42,519 [WARNING] werkzeug:  * Debugger is active!
+2026-03-15 17:11:42,527 [INFO] werkzeug:  * Debugger PIN: 863-184-168
+2026-03-15 17:11:58,461 [INFO] werkzeug: 127.0.0.1 - - [15/Mar/2026 17:11:58] "GET / HTTP/1.1" 200 -
+2026-03-15 17:11:58,771 [INFO] werkzeug: 127.0.0.1 - - [15/Mar/2026 17:11:58] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-03-15 17:11:58,775 [INFO] werkzeug: 127.0.0.1 - - [15/Mar/2026 17:11:58] "GET /static/js/auth.js HTTP/1.1" 200 -
+2026-03-15 17:11:59,296 [INFO] werkzeug: 127.0.0.1 - - [15/Mar/2026 17:11:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-15 20:42:47,039 [INFO] models.database: Database initialized successfully
+2026-03-15 20:42:47,060 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 20:42:47,101 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.167:5000
+2026-03-15 20:42:47,101 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-03-15 20:42:47,109 [INFO] werkzeug:  * Restarting with stat
+2026-03-15 20:42:47,387 [INFO] models.database: Database initialized successfully
+2026-03-15 20:42:47,395 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-15 20:42:47,402 [WARNING] werkzeug:  * Debugger is active!
+2026-03-15 20:42:47,415 [INFO] werkzeug:  * Debugger PIN: 863-184-168
+2026-03-15 20:43:05,055 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:05] "GET / HTTP/1.1" 200 -
+2026-03-15 20:43:05,454 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:05] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-03-15 20:43:05,469 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 20:43:06,257 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-15 20:43:18,936 [INFO] routes.auth: User logged in: gudurushirishareddy@gmail.com
+2026-03-15 20:43:18,936 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:18] "POST /api/auth/login HTTP/1.1" 200 -
+2026-03-15 20:43:19,015 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:19] "GET /dashboard HTTP/1.1" 200 -
+2026-03-15 20:43:19,067 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 20:43:19,074 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:19] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+2026-03-15 20:43:19,078 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:19] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+2026-03-15 20:43:19,121 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:19] "GET /api/deet/list HTTP/1.1" 200 -
+2026-03-15 20:43:19,130 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:43:19] "GET /api/resume/list HTTP/1.1" 200 -
+2026-03-15 20:45:35,587 [INFO] routes.resume: File saved: 73c39bf7b4cc4230b1fc4d93f2170235_shirisha_resume.pdf for user 1
+2026-03-15 20:45:36,747 [INFO] nlp.parser: PDF parsed with pdfplumber: 1917 chars
+2026-03-15 20:45:41,400 [INFO] routes.resume: Resume extracted: ID=2, quality=79
+2026-03-15 20:45:41,400 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:45:41] "POST /api/resume/upload HTTP/1.1" 200 -
+2026-03-15 20:45:42,659 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:45:42] "GET /register-form HTTP/1.1" 200 -
+2026-03-15 20:45:42,690 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:45:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 20:45:42,690 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:45:42] "[36mGET /static/css/form.css HTTP/1.1[0m" 304 -
+2026-03-15 20:45:42,690 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:45:42] "[36mGET /static/js/form.js HTTP/1.1[0m" 304 -
+2026-03-15 20:45:42,715 [INFO] werkzeug: 192.168.0.167 - - [15/Mar/2026 20:45:42] "POST /api/resume/gap-analysis HTTP/1.1" 200 -
+2026-03-15 21:12:38,256 [INFO] werkzeug: 127.0.0.1 - - [15/Mar/2026 21:12:38] "GET / HTTP/1.1" 200 -
+2026-03-15 21:12:38,307 [INFO] werkzeug: 127.0.0.1 - - [15/Mar/2026 21:12:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-15 21:12:38,309 [INFO] werkzeug: 127.0.0.1 - - [15/Mar/2026 21:12:38] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-03-15 21:12:38,474 [INFO] werkzeug: 127.0.0.1 - - [15/Mar/2026 21:12:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-16 19:16:15,429 [INFO] models.database: Database initialized successfully
+2026-03-16 19:16:15,441 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-16 19:16:15,505 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.167:5000
+2026-03-16 19:16:15,505 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-03-16 19:16:15,516 [INFO] werkzeug:  * Restarting with stat
+2026-03-16 19:16:15,856 [INFO] models.database: Database initialized successfully
+2026-03-16 19:16:15,869 [INFO] __main__: Resume-to-DEET application initialized successfully
+2026-03-16 19:16:15,880 [WARNING] werkzeug:  * Debugger is active!
+2026-03-16 19:16:15,889 [INFO] werkzeug:  * Debugger PIN: 863-184-168
+2026-03-16 19:17:19,074 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:19] "GET / HTTP/1.1" 200 -
+2026-03-16 19:17:19,444 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-16 19:17:19,454 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:19] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-03-16 19:17:19,604 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-16 19:17:33,301 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:33] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 401 -
+2026-03-16 19:17:52,819 [INFO] routes.auth: User logged in: gudurushirishareddy@gmail.com
+2026-03-16 19:17:52,819 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:52] "POST /api/auth/login HTTP/1.1" 200 -
+2026-03-16 19:17:52,881 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:52] "GET /dashboard HTTP/1.1" 200 -
+2026-03-16 19:17:52,929 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:52] "GET /static/css/dashboard.css HTTP/1.1" 200 -
+2026-03-16 19:17:52,935 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-16 19:17:52,936 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:52] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+2026-03-16 19:17:52,960 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:52] "GET /api/deet/list HTTP/1.1" 200 -
+2026-03-16 19:17:52,968 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:17:52] "GET /api/resume/list HTTP/1.1" 200 -
+2026-03-16 19:18:07,990 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:18:07] "GET /dashboard HTTP/1.1" 200 -
+2026-03-16 19:18:08,035 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:18:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-16 19:18:08,038 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:18:08] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+2026-03-16 19:18:08,038 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:18:08] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+2026-03-16 19:18:08,088 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:18:08] "GET /api/deet/list HTTP/1.1" 200 -
+2026-03-16 19:18:08,110 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:18:08] "GET /api/resume/list HTTP/1.1" 200 -
+2026-03-16 19:19:53,409 [INFO] routes.resume: File saved: a340247a74fa4e799bbff5862b4370d6_ANJALI_CV.pdf for user 1
+2026-03-16 19:19:54,801 [INFO] nlp.parser: PDF parsed with pdfplumber: 2152 chars
+2026-03-16 19:20:00,699 [INFO] routes.resume: Resume extracted: ID=3, quality=80
+2026-03-16 19:20:00,699 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:00] "POST /api/resume/upload HTTP/1.1" 200 -
+2026-03-16 19:20:01,961 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:01] "GET /register-form HTTP/1.1" 200 -
+2026-03-16 19:20:02,005 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-16 19:20:02,017 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:02] "GET /static/css/form.css HTTP/1.1" 200 -
+2026-03-16 19:20:02,017 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:02] "GET /static/js/form.js HTTP/1.1" 200 -
+2026-03-16 19:20:02,078 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:02] "POST /api/resume/gap-analysis HTTP/1.1" 200 -
+2026-03-16 19:20:39,944 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:39] "[35m[1mPOST /api/deet/save HTTP/1.1[0m" 201 -
+2026-03-16 19:20:43,684 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:43] "GET /dashboard HTTP/1.1" 200 -
+2026-03-16 19:20:43,725 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-03-16 19:20:43,725 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:43] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+2026-03-16 19:20:43,725 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:43] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+2026-03-16 19:20:43,764 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:43] "GET /api/deet/list HTTP/1.1" 200 -
+2026-03-16 19:20:43,768 [INFO] werkzeug: 127.0.0.1 - - [16/Mar/2026 19:20:43] "GET /api/resume/list HTTP/1.1" 200 -

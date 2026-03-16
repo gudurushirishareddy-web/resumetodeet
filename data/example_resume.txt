@@ -1,0 +1,49 @@
+RAVI KUMAR SHARMA
++91 98765 43210 | ravi.sharma@gmail.com | Hyderabad, Telangana
+linkedin.com/in/ravikumar | github.com/ravikumar
+
+Career Objective
+Passionate Computer Science graduate seeking a Software Engineer role where I can apply my skills in full-stack web development, machine learning, and problem-solving to build impactful solutions.
+
+Education
+
+B.Tech – Computer Science and Engineering
+Jawaharlal Nehru Technological University, Hyderabad | 2020 – 2024
+CGPA: 8.4 / 10
+
+Intermediate / +2
+Narayana Junior College, Hyderabad | 2018 – 2020
+Percentage: 95.6%
+
+10th Standard
+Kendriya Vidyalaya, Hyderabad | 2018
+CGPA: 9.8
+
+Technical Skills
+Programming Languages: Python, Java, JavaScript, C++
+Web Technologies: React, Node.js, Express, HTML5, CSS3, Bootstrap, REST API
+Tools / Platforms: Git, GitHub, Docker, AWS, VS Code, Postman, MySQL, MongoDB
+Core Concepts: Data Structures, Algorithms, Machine Learning, OOP, DBMS, Operating Systems
+
+Academic Projects
+
+Resume Parser Web App – Built a full-stack web application using React and Flask to parse resumes and auto-fill job application forms. Used spaCy NLP and Regex for intelligent data extraction. Technologies: Python, Flask, React, spaCy, pdfplumber.
+
+Student Management System – Designed a DBMS project using MySQL and Java Swing for managing student records, attendance, and grades. Technologies: Java, MySQL, Swing.
+
+House Price Prediction – Applied Linear Regression and Random Forest models to predict housing prices using scikit-learn and pandas. Achieved 92% accuracy. Technologies: Python, scikit-learn, pandas, matplotlib.
+
+Certifications
+Python for Everybody – Coursera / University of Michigan
+The Web Developer Bootcamp – Udemy
+Machine Learning A-Z – Udemy
+AWS Cloud Practitioner Essentials – Amazon Web Services
+
+Participations / Hackathons
+Smart India Hackathon 2023 – Ministry of Education, Government of India
+HackJNTU 2022 – JNTU Hyderabad
+Code Fest 2022 – IIIT Hyderabad
+
+Additional Information
+Languages: Telugu, English, Hindi
+Hobbies: Competitive Programming, Open Source Contribution, Technical Blogging
